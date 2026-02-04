@@ -1,67 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding for consistent text rendering -->
   <meta charset="UTF-8">
+  <title>CV – HCI Lab 01</title>
 
-  <!-- Page title shown in browser tab and announced by screen readers -->
-  <title>Don Norman – CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111111;
+      font-size: 16px;
+    }
+
+    header, footer {
+      background-color: #f4f4f4;
+      color: #1a237e;
+    }
+
+    h1, h2, h3 {
+      color: #1a237e;
+    }
+
+    nav a {
+      color: #283593;
+      font-size: 16px;
+    }
+
+    nav a[aria-current="page"] {
+      color: #1a237e;
+    }
+
+    a {
+      color: #283593;
+    }
+
+    .project-info {
+      background-color: #f9f9f9;
+      color: #111111;
+      font-size: 15px;
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- Page header: identifies the page -->
-  <header>
-    <h1>Curriculum Vitae</h1>
-  </header>
-
-  <!-- Primary navigation: consistent across all pages -->
+<header>
+  <h1>Conceptual CV</h1>
   <nav aria-label="Primary navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
-
-      <!-- Current page is indicated using aria-current -->
       <li><a href="cv.html" aria-current="page">CV</a></li>
-
       <li><a href="contact.html">Contact</a></li>
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html">Lab 01 Rules</a></li>
-
+	  <li><a href="html_errors.html">HTML Errors</a></li>
     </ul>
   </nav>
+</header>
 
-  <!-- Main landmark: unique content of this page -->
-  <main>
+<main>
 
-    <section>
-      <h2>Education</h2>
+  <section>
+    <h2>Group Project</h2>
+    <div class="project-info">
+      <p><strong>Course:</strong> HCI – Lab 01</p>
+      <p><strong>Student Names & Seat Numbers:</strong></p>
       <ul>
-        <li>PhD in Psychology – University of Pennsylvania</li>
-        <li>BSc in Engineering – MIT</li>
+        <li>BAZELA – B23110006020 (BSCS III B)</li>
+        <li>TOOBA SHAFIQ – B23110006173 (BSCS III B)</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Work Experience</h2>
+  <section>
+    <h2>Research Focus</h2>
+    <p>
+      Human–Computer Interaction, cognitive modeling, and usability analysis.
+    </p>
+  </section>
 
-      <!-- Each role is grouped as a separate content unit -->
-      <article>
-        <h3>Professor of Cognitive Science</h3>
-        <p>University of California, San Diego</p>
-      </article>
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Semantic HTML</li>
+      <li>Structured, accessible markup following W3C best practices</li>
+      <li>Understanding of Norman, GOMS, and KLM models</li>
+    </ul>
+  </section>
 
-      <article>
-        <h3>Director, Design Lab</h3>
-        <p>Founder of the Nielsen Norman Group</p>
-      </article>
-    </section>
+  <section>
+    <h2>HCI Assignments</h2>
+    <p>
+      Completed Lab 01: Semantic HTML foundations and interaction model analysis.
+    </p>
+  </section>
 
-  </main>
+</main>
 
-  <!-- Footer contains supplementary navigation and meta information -->
-  <footer>
-    <p><a href="index.html">Back to Home</a></p>
-  </footer>
+<footer>
+  <p>© 2026 HCI–CG Course</p>
+  <p><a href="index.html">Back to Home</a></p>
+</footer>
 
 </body>
 </html>

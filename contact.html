@@ -1,62 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding for consistent text rendering -->
   <meta charset="UTF-8">
+  <title>Contact – Norman, GOMS, KLM</title>
 
-  <!-- Page title shown in browser tab and announced by screen readers -->
-  <title>Don Norman – Contact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111111;
+      font-size: 16px;
+    }
+
+    header, footer {
+      background-color: #f4f4f4;
+      color: #1a237e;
+    }
+
+    h1, h2 {
+      color: #1a237e;
+    }
+
+    nav a {
+      color: #283593;
+      font-size: 16px;
+    }
+
+    nav a[aria-current="page"] {
+      color: #1a237e;
+    }
+
+    a {
+      color: #283593;
+    }
+
+    label {
+      font-size: 16px;
+      color: #111111;
+    }
+
+    input, textarea, button {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #111111;
+      background-color: #ffffff;
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- Page header: identifies the page purpose -->
-  <header>
-    <h1>Contact</h1>
-  </header>
+<header>
+  <h1>Contact Us</h1>
 
-  <!-- Primary navigation: identical structure across all pages -->
   <nav aria-label="Primary navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="cv.html">CV</a></li>
-
-      <!-- Current page is indicated using aria-current -->
       <li><a href="contact.html" aria-current="page">Contact</a></li>
-
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html">Lab 01 Rules</a></li>
-
+	  <li><a href="html_errors.html">HTML Errors</a></li>
     </ul>
   </nav>
+</header>
 
-  <!-- Main landmark: primary content of this page -->
-  <main>
+<main>
+  <section>
+    <h2>Send Us a Message or Feedback</h2>
+
     <form action="#" method="post">
-      
-      <!-- Groups related form controls and provides context -->
       <fieldset>
-        <legend>Send a Message</legend>
+        <legend>Contact Form</legend>
 
-        <!-- Label explicitly associated with its input -->
-        <label for="subject">Subject</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name" placeholder="e.g., John Doe"><br><br>
 
-        <!-- Textarea with clear label for screen readers -->
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+        <label for="email">Your Email</label><br>
+        <input type="email" id="email" name="email" placeholder="e.g., john@example.com"><br><br>
 
-        <!-- Submit button is keyboard accessible by default -->
-        <button type="submit">Send</button>
+        <label for="message">Your Message</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here"></textarea><br><br>
+
+        <button type="submit">Send Message</button>
       </fieldset>
-
     </form>
-  </main>
+  </section>
+</main>
 
-  <!-- Footer provides supplementary information -->
-  <footer>
-    <p>Keyboard accessible form with screen-reader friendly labels.</p>
-  </footer>
+<footer>
+  <p>Keyboard-accessible form with screen-reader-friendly labels.</p>
+  <p><a href="index.html">Back to Home</a></p>
+</footer>
 
 </body>
 </html>

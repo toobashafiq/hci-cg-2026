@@ -1,64 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding for proper text rendering -->
   <meta charset="UTF-8">
+  <title>Home – Don Norman & HCI Lab 01</title>
 
-  <!-- Page title shown in browser tab and screen readers -->
-  <title>Don Norman – Home</title>
+  <!-- Lab 01: Allowed CSS ONLY -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111111;
+      font-size: 16px;
+    }
+
+    header {
+      background-color: #f4f4f4;
+      color: #1a237e;
+    }
+
+    footer {
+      background-color: #f4f4f4;
+      color: #444444;
+      font-size: 14px;
+    }
+
+    h1 {
+      color: #1a237e;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #1a237e;
+      font-size: 1.5em;
+    }
+
+    nav a {
+      color: #283593;
+      font-size: 16px;
+    }
+
+    nav a[aria-current="page"] {
+      color: #1a237e;
+    }
+
+    .bio {
+      background-color: #f9f9f9;
+      color: #111111;
+    }
+
+    a {
+      color: #283593;
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- Page header: identifies the site and its purpose -->
-  <header>
-    <h1>Don Norman</h1>
-    <p>Human–Computer Interaction Philosopher</p>
-  </header>
-
-  <!-- Primary navigation landmark for keyboard and screen reader users -->
+<header>
+  <h1>Don Norman – HCI Pioneer</h1>
   <nav aria-label="Primary navigation">
     <ul>
-      <!-- Current page is indicated using aria-current -->
-      <li>
-        <a href="index.html" aria-current="page">Home</a>
-      </li>
-
-      <!-- Navigation links to other site sections -->
+      <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html">Lab 01 Rules</a></li>
-
+      <li><a href="html_errors.html">HTML Errors</a></li>
     </ul>
   </nav>
+</header>
 
-  <!-- Main content landmark: unique content of this page -->
-  <main>
-    <section>
-      <!-- Section heading establishes content hierarchy -->
-      <h2>Biography</h2>
+<main>
 
-      <!-- Informative image with alternative text for accessibility -->
-      <img src="norman.jpg" alt="Portrait of Don Norman">
+  <section class="bio">
+    <h2>Don Norman – Key Biography</h2>
 
-      <p>
-        Don Norman is a pioneer in the field of Human–Computer Interaction,
-        known for his work on user-centered design, usability, and cognitive
-        engineering.
-      </p>
-    </section>
-  </main>
+    <img src="DonNorman.jpg" alt="Don Norman">
 
-  <!-- Footer contains meta or supplementary information -->
-  <footer>
-    <p>&copy; 2026 HCI–CG Course</p>
-  <p>
-    <a href="assignment01.html">Lab 01 Instructions</a> |
-    <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
-    <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
-  </p>
-  </footer>
+    <p>
+      Donald Arthur Norman (b. 1935) is a pioneer in Human–Computer Interaction (HCI),
+      known for <strong>user-centered design</strong> and
+      <strong>usability engineering</strong>.
+    </p>
+
+    <h3>Education & Career</h3>
+    <ul>
+      <li>B.S. Electrical Engineering, MIT; M.S. & Ph.D. Psychology, University of Pennsylvania</li>
+      <li>Faculty: UCSD, Harvard, Northwestern, KAIST</li>
+      <li>Industry: VP at Apple, HP executive, IDEO Fellow, co-founder of Nielsen Norman Group</li>
+    </ul>
+
+    <h3>Contributions</h3>
+    <ul>
+      <li>Popularized User-Centered Design (UCD) / Human-Centered Design (HCD)</li>
+      <li>Shaped modern User Experience (UX)</li>
+      <li>
+        Books:
+        <em>The Design of Everyday Things</em>,
+        <em>Emotional Design</em>,
+        <em>Living with Complexity</em>
+      </li>
+    </ul>
+
+    <h3>Awards</h3>
+    <ul>
+      <li>Benjamin Franklin Medal (Computer & Cognitive Science)</li>
+      <li>Member, National Academy of Engineering</li>
+      <li>Fellow, American Academy of Arts and Sciences</li>
+    </ul>
+
+    <h3>References</h3>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Don_Norman">Don Norman – Wikipedia</a></li>
+      <li><a href="https://www.amacad.org/person/don-norman">American Academy of Arts & Sciences</a></li>
+      <li><a href="https://jnd.org/about-don-norman/about-don-norman/">Official Website</a></li>
+    </ul>
+  </section>
+
+  <section class="bio">
+    <h2>GOMS Creators – Brief Biographies</h2>
+
+    <img src="Card_Moran_Newell.jpg" alt="Stuart Card, Thomas Moran, and Allen Newell">
+
+    <h3>Stuart K. Card</h3>
+    <p>
+      American HCI pioneer and co-author of
+      <em>The Psychology of Human-Computer Interaction</em> (1983),
+      where GOMS was first described. Senior Research Fellow at Xerox PARC.
+    </p>
+
+    <h3>Thomas P. Moran</h3>
+    <p>
+      American computer scientist and HCI researcher at Xerox PARC.
+      Co-founded the journal <strong>Human–Computer Interaction</strong>.
+    </p>
+
+    <h3>Allen Newell (1927–1992)</h3>
+    <p>
+      American cognitive scientist and AI pioneer.
+      Co-founder of CMU’s AI Lab and Turing Award winner (1975).
+    </p>
+
+    <h3>References</h3>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Stuart_Card">Stuart K. Card – Wikipedia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Thomas_P._Moran">Thomas P. Moran – Wikipedia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Allen_Newell">Allen Newell – Wikipedia</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Lab 01 – Overview</h2>
+    <p>
+      Welcome to <strong>Lab 01: Norman, GOMS, and KLM</strong>. This lab helps you:
+    </p>
+    <ul>
+      <li>Understand Norman’s Action Cycle and cognitive stages.</li>
+      <li>Compare task modeling using the GOMS model.</li>
+      <li>Estimate task execution times using KLM operators.</li>
+      <li>Identify common HTML errors and learn corrections.</li>
+      <li>Conduct interaction analysis with real-world examples.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 HCI–CG Course</p>
+</footer>
 
 </body>
 </html>
