@@ -26,7 +26,6 @@
     }
     table {
       font-size: 14px;
-      border-collapse: collapse;
     }
     thead {
       background-color: #f4f4f4;
@@ -52,11 +51,14 @@
   <h1>Interaction Analysis</h1>
   <nav aria-label="Primary navigation">
     <ul>
-      <li><a href="index.html" title="Go to Home page">Home</a></li>
-      <li><a href="cv.html" title="View Conceptual CV">CV</a></li>
-      <li><a href="contact.html" title="Contact form">Contact</a></li>
-      <li><a href="analysis.html" aria-current="page" title="Norman vs GOMS Interaction Analysis">Interaction Analysis</a></li>
-      <li><a href="norman2klm.html" title="Norman, GOMS, and KLM comparison">Norman–GOMS–KLM</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="analysis.html" aria-current="page">Interaction Analysis</a></li>
+      <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
+      <li><a href="who-paid.html">Who Paid Task</a></li>
+      <li><a href="ui-evaluation.html">UI Evaluation</a></li>
       <li><a href="html_errors.html">HTML Errors</a></li>
     </ul>
   </nav>
@@ -80,7 +82,8 @@
     <img src="WifiTask.jpg" alt="Norman’s Action Cycle vs GOMS – Wi-Fi Toggle Task">
 
     <table>
-      <caption>Norman’s Action Cycle vs GOMS – Wi-Fi Toggle Task</caption>
+     <caption>Wi-Fi Toggle Task – Norman vs GOMS Comparison</caption>
+
       <thead>
         <tr>
           <th scope="col">Stage</th>
@@ -123,7 +126,7 @@
       </tbody>
     </table>
 
-    <div class="note">
+    <aside class ="note">
       <h3>Key Insights</h3>
       <ul>
         <li>Norman emphasizes cognition, decision-making, visual search, and feedback.</li>
@@ -132,7 +135,7 @@
         <li>Feedback and perception are unique to Norman and abstracted or ignored in GOMS.</li>
       </ul>
       <p><strong>Exam Takeaway:</strong> Norman explains how users understand and evaluate actions, while GOMS/KLM focuses on efficiency and timing.</p>
-    </div>
+    </aside>
   </section>
 
   <!-- Example 2: Syringe -->
@@ -200,7 +203,7 @@
       </tbody>
     </table>
 
-    <div class="note">
+    <aside class="note">
       <h3>Key Insights</h3>
       <ul>
         <li>Good design reduces cognitive effort and improves perception.</li>
@@ -208,7 +211,68 @@
         <li>Norman’s stages help identify where poor design affects user performance.</li>
         <li>Exam Takeaway: Clear design, feedback, and mapping reduce errors and improve usability.</li>
       </ul>
-    </div>
+    </aside>
+  </section>
+
+  <!-- Example 3: Water Dispenser -->
+  <section>
+    <h2>Example 3: Using a Water Dispenser (Button-Based)</h2>
+
+    <img src="WaterDispenser.jpg" alt="Water Dispenser Button Interaction">
+
+    <table>
+      <caption>Norman’s Action Cycle vs GOMS – Water Dispenser Button Task</caption>
+      <thead>
+        <tr>
+          <th scope="col">Stage</th>
+          <th scope="col">User Action</th>
+          <th scope="col">GOMS / KLM Interpretation</th>
+          <th scope="col">Analysis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Goal</th>
+          <td>User wants to fill a cup with water</td>
+          <td>Goal = Get water</td>
+          <td>✅ Both models clearly define the objective</td>
+        </tr>
+        <tr>
+          <th scope="row">Plan / Decision</th>
+          <td>User decides to press the dispenser button</td>
+          <td>Method = Hold cup → Press button</td>
+          <td>🟡 Norman highlights intention; GOMS defines task method</td>
+        </tr>
+        <tr>
+          <th scope="row">Target Identification</th>
+          <td>User visually locates the water button</td>
+          <td>Not explicitly modeled; assumed known</td>
+          <td>⚠️ Norman models perception; GOMS assumes button is visible</td>
+        </tr>
+        <tr>
+          <th scope="row">Execute</th>
+          <td>User presses and holds the button</td>
+          <td>Operator = Press; KLM: M → P → K</td>
+          <td>✅ Physical action captured well by both models</td>
+        </tr>
+        <tr>
+          <th scope="row">Feedback / Evaluate</th>
+          <td>User sees water flowing and releases button when cup is full</td>
+          <td>Feedback assumed, not detailed</td>
+          <td>❌ Norman explains feedback; GOMS ignores evaluation</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <aside class="note">
+      <h3>Key Insights</h3>
+      <ul>
+        <li>Norman’s model captures user intention, perception, and feedback.</li>
+        <li>GOMS/KLM focuses on physical steps and efficiency.</li>
+        <li>Button-based interaction reduces ambiguity compared to sensor-based systems.</li>
+        <li><strong>Exam Takeaway:</strong> Norman explains usability; GOMS/KLM explains performance.</li>
+      </ul>
+    </aside>
   </section>
 
 </main>

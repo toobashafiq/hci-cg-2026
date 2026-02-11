@@ -36,10 +36,8 @@
       color: #1a237e;
     }
 
-    /* LAB 01 COMPLIANT TABLE STYLING */
     table {
       font-size: 14px;
-      border-collapse: collapse;
     }
 
     thead {
@@ -65,10 +63,13 @@
   <nav aria-label="Primary navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html" aria-current="page">Norman–GOMS–KLM</a></li>
+      <li><a href="who-paid.html">Who Paid Task</a></li>
+      <li><a href="ui-evaluation.html">UI Evaluation</a></li>
       <li><a href="html_errors.html">HTML Errors</a></li>
     </ul>
   </nav>
@@ -145,15 +146,6 @@
       and the actions allowed by the system) and the gulf of evaluation (the distance 
       between the physical presentation of the system state and the expectation of the user).
     </p>
-    <p><strong>Reference:</strong> Alan Dix, <em>Human-Computer Interaction</em>, 3rd Edition, Chapter 3: The Interaction, p. 125.</p>
-    <p>
-      Norman’s execution–evaluation cycle is used within
-      cognitive walkthroughs as an expert-based evaluation method.
-      Evaluators examine whether users can understand the feedback they
-      receive after each action and whether the system state clearly
-      supports the user’s goals, without involving actual users.
-    </p>
-    <p><strong>Reference:</strong> Alan Dix, <em>Human-Computer Interaction</em>, 3rd Edition, Chapter 9.</p>
   </section>
 
   <section>
@@ -164,53 +156,28 @@
       focusing on the structure of actions.
     </p>
     <ul>
-      <li><strong>Goals:</strong> These are the user’s goals, describing what the user wants to achieve. 
-        In GOMS, goals also represent a memory point to which the user may return to evaluate actions 
-        or recover from errors.
-      </li>
-      <li><strong>Operators:</strong> These are the lowest level of analysis and are the basic actions 
-        that the user must perform to use the system. Operators may affect the system 
-        (e.g., pressing a key) or only the user’s mental state (e.g., reading a dialog box).
-      </li>
-      <li><strong>Methods:</strong> These are the procedures for accomplishing goals. A goal can be 
-        decomposed into subgoals in several ways, and each alternative decomposition is called a method 
-        (e.g., closing a window using a menu option or a function key).
-      </li>
-      <li><strong>Selection Rules:</strong> These specify how the user chooses between different methods 
-        when more than one method is available to achieve the same goal.
-      </li>
+      <li><strong>Goals:</strong> The user’s objectives, and points to return for evaluation or error recovery.</li>
+      <li><strong>Operators:</strong> Basic actions affecting system or mental state.</li>
+      <li><strong>Methods:</strong> Procedures to achieve goals, decomposed into subgoals.</li>
+      <li><strong>Selection Rules:</strong> How the user chooses between methods when multiple exist.</li>
     </ul>
-    <p>
-      According to Chapter 9 (Section 9.3.3), GOMS is also used as a
-      model-based expert evaluation technique. It allows designers to
-      analyse user performance and compare task efficiency without
-      direct user involvement, combining design specification and
-      evaluation within the same framework.
-    </p>
-    <p><strong>Reference:</strong> Alan Dix, <em>Human-Computer Interaction</em>, 3rd Edition, Chapter 12: Cognitive Models, p. 422.</p>
   </section>
 
   <section>
     <h2>Keystroke-Level Model (KLM)</h2>
     <img src="KLM-Model.jpg" alt="The KLM Model">
-    <p>
-      KLM (Keystroke-Level Model) uses the human motor system to predict user performance for unit tasks, typically under 20 seconds. Complex tasks are split into subtasks (as in GOMS). The task has two phases: acquisition and execution.
-    </p>
-    <p>
-      KLM predicts only the execution phase. The model decomposes execution into physical motor operators, a mental operator, and a system response operator:
-    </p>
     <ul>
-      <li>K: Keystroking, actually striking keys, including shifts and other modifier keys.</li>
-      <li>B: Pressing a mouse button.</li>
-      <li>P: Pointing, moving the mouse (or similar device) at a target.</li>
-      <li>H: Homing, switching the hand between mouse and keyboard.</li>
-      <li>D: Drawing lines using the mouse.</li>
-      <li>M: Mentally preparing for a physical action.</li>
-      <li>R: System response which may be ignored if the user does not have to wait for it.</li>
+      <li>K: Keystroking</li>
+      <li>B: Mouse button press</li>
+      <li>P: Pointing with mouse</li>
+      <li>H: Homing hands</li>
+      <li>D: Drawing lines</li>
+      <li>M: Mental preparation</li>
+      <li>R: System response</li>
     </ul>
 
     <table>
-      <caption>Table 12.1 Times for various operators in the keystroke-level model (adapted from Card, Moran and Newell [56], published and reprinted by permission of Lawrence Erlbaum Associates, Inc.)</caption>
+      <caption>Times for KLM operators</caption>
       <thead>
         <tr>
           <th>Operator</th>
@@ -236,7 +203,7 @@
         </tr>
         <tr>
           <td>B</td>
-          <td>Mouse button press – down or up</td>
+          <td>Mouse button press – down/up</td>
           <td>0.10</td>
         </tr>
         <tr>
@@ -244,68 +211,15 @@
           <td>Mouse button press – click</td>
           <td>0.20</td>
         </tr>
-        <tr>
-          <td>P</td>
-          <td>Point with mouse – Fitts’ law</td>
-          <td>0.1 log2(D/S + 0.5)</td>
-        </tr>
-        <tr>
-          <td>P</td>
-          <td>Point with mouse – average movement</td>
-          <td>1.10</td>
-        </tr>
-        <tr>
-          <td>H</td>
-          <td>Home hands to and from keyboard</td>
-          <td>0.40</td>
-        </tr>
-        <tr>
-          <td>D</td>
-          <td>Drawing – domain dependent</td>
-          <td>–</td>
-        </tr>
-        <tr>
-          <td>M</td>
-          <td>Mentally prepare</td>
-          <td>1.35</td>
-        </tr>
-        <tr>
-          <td>R</td>
-          <td>Response from system – measure</td>
-          <td>–</td>
-        </tr>
       </tbody>
     </table>
-
-    <p>wpm = words per minute</p>
-    <p><strong>Reference:</strong> Alan Dix, <em>Human-Computer Interaction</em>, 3rd Edition, Chapter 12: Cognitive Models, p. 436.</p>
-    <p>
-      KLM as a lower-level modeling technique that
-      provides precise predictions of the time required for low-level
-      physical actions. Compared to GOMS, KLM is more granular and focuses
-      purely on execution rather than planning or decision-making (from Chapter 9).
-    </p>
-  </section>
-
-  <section>
-    <h2>Example: Correcting a Typing Error</h2>
-    <p>
-      If a user notices a wrong character and corrects it,
-      KLM represents the task as a sequence of low-level actions
-      such as moving the mouse, pressing keys, and waiting for feedback.
-    </p>
-    <p>
-      This shows that KLM only models execution, not thinking
-      about what to do.
-    </p>
   </section>
 
 </main>
 
 <footer>
   <p>
-    Content developed for Lab 01 based on concepts from
-    Dix et al., <em>Human–Computer Interaction</em>.
+    Content developed for Lab 01 based on Dix et al., <em>Human–Computer Interaction</em>.
   </p>
   <p><a href="index.html">Back to Home</a></p>
 </footer>
